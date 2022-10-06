@@ -1,5 +1,6 @@
 import calculator
 
 if __name__ == '__main__':
-    sol = calculator.runCalculator()
+    inputString = input("Please enter a mathematical expression: ")
+    sol = calculator.runCalculator(inputString)
     print(sol)
