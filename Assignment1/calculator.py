@@ -53,8 +53,7 @@ def infixToPostfix(infixlst):
         postfixlst.append(stack.get())
     return postfixlst
 
-def runCalculator():
-    inputString = input("Please enter a mathematical expression: ")
+def runCalculator(inputString):
     lst = readInput(inputString)
     postfixlst = infixToPostfix(lst)
     stack = LifoQueue()
